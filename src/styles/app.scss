@@ -1,0 +1,66 @@
+@import 'common/normalize';
+@import 'common/adaptive';
+
+body{
+	--text-color: #023352;
+	--sub-text-color: #606060;
+	--btn-text-color: #FFFFFF;
+	--bg-color: #EEF1FF;
+	--sub-color: #0361DC;
+	margin: 0;
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Formular';
+	color: var(--text-color);
+	background: var(--bg-color);
+}
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+	flex-direction: column;
+}
+.content {
+	flex: 1;
+}
+.mycontainer {
+	width: 100%;
+	max-width: 1496px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+.btn-background{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--sub-color);
+	border-radius: 40px;
+	font-weight: bold;
+	color: var(--btn-text-color);
+	svg{
+		margin-left: 8px;
+	}
+}
+.btn-border{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	border-radius: 40px;
+	font-weight: bold;
+	color: var(--sub-color);
+	border: 1.6px solid var(--sub-color);
+	svg{
+		margin-left: 8px;
+	}
+}
+.margin-block{
+	margin-bottom: 160px;
+}
+
+@import 'common/fonts';
+@import 'common/header';
+@import 'common/footer';
+@import 'pages/index';
+@import 'pages/main';
+

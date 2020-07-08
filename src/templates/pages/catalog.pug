@@ -1,0 +1,85 @@
+extends ../template
+
+block variables
+	- var title = 'Каталог'
+
+block content
+	.main
+		.mycontainer
+			h1.main__title Каталог хостингов
+		section.main-filter
+			.mycontainer
+				img(src="assets/images/filter-line.svg", alt="")
+				form.main-filter-wrap
+					.main-filter-top
+						.main-filter-top__title Задайте параметры, и мы поможем вам с выбором
+						a.main-filter-top__btn(href="#")
+							| Я не разбираюсь, помогите мне
+							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+							</svg>
+					.main-filter-content
+						.main-filter-content-row
+							.main-filter-content-input
+								label(for="saits-from") Сайтов от
+								input(type="text" id="saits-from")
+								label(for="saits-to") до
+								input(type="text" id="saits-to")
+								span шт.
+							.main-filter-content-input
+								label(for="ssd-from") SSD от
+								input(type="text" id="ssd-from")
+								label(for="ssd-to") до
+								input(type="ssd" id="ssd-to")
+								span Гб
+							.main-filter-content-input.select-input
+								.select-input__title Расположение сервера
+								.select-input-items
+									.select-input-items-item
+									.select-input-items-item
+									.select-input-items-item
+							.main-filter-content-input
+								label(for="price-from") Цена от
+								input(type="text" id="price-from")
+								label(for="price-to") до
+								input(type="text" id="price-to")
+								span Гб
+						.main-filter-content-row
+							label.main-filter-content-checkbox
+								input(type="checkbox")
+								span
+								span Защита от DDOS
+							label.main-filter-content-checkbox
+								input(type="checkbox")
+								span
+								span Бесплатный домен с хостингом
+							label.main-filter-content-checkbox
+								input(type="checkbox")
+								span
+								span Бесплатный SSL-сертификат
+							label.main-filter-content-checkbox
+								input(type="checkbox")
+								span
+								span Кэшбек
+							label.main-filter-content-checkbox
+								input(type="checkbox")
+								span
+								span Бесплатный тестовый период
+					.main-filter-bot
+						.main-filter-bot-btns
+							a.main-filter-bot-btns__more(href="#") 
+								| Развернуть фильтр
+								<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.97631 12.2692 0.659728 12.2692 0.464466 12.4645C0.269203 12.6597 0.269203 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 -2.18557e-08L3.5 16L4.5 16L4.5 2.18557e-08L3.5 -2.18557e-08Z" fill="#0361DC"/>
+								</svg>
+							button.main-filter-bot-btns__clear(type="reset") 
+								| Сбросить
+								<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1L5 5M5 5L9 1M5 5L9 9M5 5L1 9" stroke="#606060" stroke-linecap="round"/>
+								</svg>
+						button.main-filter-bot__btn.btn-background(type="submit") Показать 814 предложений
+		
+		section.main-catalog.margin-block
+			.mycontainer
+				.main-catalog-content
+					

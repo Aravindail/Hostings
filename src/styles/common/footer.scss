@@ -1,0 +1,59 @@
+.footer{
+	> svg{
+		width: 100%;
+	}
+	.mycontainer{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&-col{
+		&__title{
+			font-weight: 500;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+		}
+		&__link{
+			margin-bottom: 4px;
+		}
+		&__all{
+			font-weight: bold;
+			margin-top: 12px;
+			color: var(--sub-color);
+			display: flex;
+			align-items: center;
+			&:after{
+				content: '';
+				display: inline-block;
+				margin-left: 8px; 
+				width: 16px;
+				height: 8px;
+				background: url('../images/arr-footer.svg') center no-repeat;
+			}
+		}
+		&-socials{
+			display: flex;
+			a{
+				width: 24px;
+				height: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				background: #FFFFFF;
+				box-shadow: 0px 2px 7px rgba(3, 97, 220, 0.2);
+				margin-right: 16px;
+			}
+		}
+		&__made{
+			display: flex;
+			margin-top: 10px;
+			a{
+				margin-left: 5px;
+				font-weight: bold;
+				color: var(--sub-color);
+			}
+		}
+	}
+}
