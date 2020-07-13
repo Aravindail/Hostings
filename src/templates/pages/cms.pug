@@ -1,91 +1,69 @@
 extends ../template
 
 block variables
-	- var title = 'Каталог'
+	- var title = 'CMS'
 
 block content
 	.main
 		.mycontainer
 			.main-top
-				h1.main-top__title Каталог хостингов
+				h1.main-top__title Хостинги для <span>1С-Битрикс</span>
 
-		section.main-filter
+		section.main-catalog.margin-block.wide-catalog
 			.mycontainer
-				img(src="assets/images/filter-line.svg", alt="")
-				form.main-filter-wrap
-					.main-filter-top
-						.main-filter-top__title Задайте параметры, и мы поможем вам с выбором
-						a.main-filter-top__btn(href="#")
-							| Я не разбираюсь, помогите мне
-							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
-							</svg>
-					.main-filter-content
-						.main-filter-content-row
-							.main-filter-content-input
-								label(for="saits-from") Сайтов от
-								input(type="text" id="saits-from")
-								label(for="saits-to") до
-								input(type="text" id="saits-to")
-								span шт.
-							.main-filter-content-input
-								label(for="ssd-from") SSD от
-								input(type="text" id="ssd-from")
-								label(for="ssd-to") до
-								input(type="ssd" id="ssd-to")
-								span Гб
-							.main-filter-content-input.select-input
-								.select-input__title Расположение сервера
-								.select-input-items
-									.select-input-items-item
-									.select-input-items-item
-									.select-input-items-item
-							.main-filter-content-input
-								label(for="price-from") Цена от
-								input(type="text" id="price-from")
-								label(for="price-to") до
-								input(type="text" id="price-to")
-								span Гб
-						.main-filter-content-row
-							label.main-filter-content-checkbox
-								input(type="checkbox")
-								span
-								span Защита от DDOS
-							label.main-filter-content-checkbox
-								input(type="checkbox")
-								span
-								span Бесплатный домен с хостингом
-							label.main-filter-content-checkbox
-								input(type="checkbox")
-								span
-								span Бесплатный SSL-сертификат
-							label.main-filter-content-checkbox
-								input(type="checkbox")
-								span
-								span Кэшбек
-							label.main-filter-content-checkbox
-								input(type="checkbox")
-								span
-								span Бесплатный тестовый период
-					.main-filter-bot
-						.main-filter-bot-btns
-							a.main-filter-bot-btns__more(href="#") 
-								| Развернуть фильтр
-								<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.97631 12.2692 0.659728 12.2692 0.464466 12.4645C0.269203 12.6597 0.269203 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 -2.18557e-08L3.5 16L4.5 16L4.5 2.18557e-08L3.5 -2.18557e-08Z" fill="#0361DC"/>
+				
+				.main-catalog-info
+					.main-catalog-info-content
+						.main-catalog-info-wrap
+							.main-catalog-info__text Большинство хостингов из России и стран СНГ готовы предоставить всем желающим бесплатный тестовый период
+							.main-catalog-info-items
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info1.jpg", alt="")
+									.main-catalog-info-items-item__title Beget,
+									.main-catalog-info-items-item__text 30 дней
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info2.jpg", alt="")
+									.main-catalog-info-items-item__title Hostland,
+									.main-catalog-info-items-item__text 30 дней
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info3.jpg", alt="")
+									.main-catalog-info-items-item__title Webhost1,
+									.main-catalog-info-items-item__text 30 дней
+							a.main-catalog-info__link(href="#")
+								| 49 хостингов с тестовым периодом
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
 								</svg>
-							button.main-filter-bot-btns__clear(type="reset") 
-								| Сбросить
-								<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 1L5 5M5 5L9 1M5 5L9 9M5 5L1 9" stroke="#606060" stroke-linecap="round"/>
+						.main-catalog-info-wrap
+							.main-catalog-info__text На некоторых тарифах вы можете подключать услуги по мере необходимости, такие тарифные планы называются «конструкторами»
+							.main-catalog-info-items
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info4.jpg", alt="")
+									.main-catalog-info-items-item__title Макхост,
+									.main-catalog-info-items-item__text от 129 руб.
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info5.jpg", alt="")
+									.main-catalog-info-items-item__title Джино,
+									.main-catalog-info-items-item__text от 117 руб.
+								a.main-catalog-info-items-item(href="#")
+									.main-catalog-info-items-item__img
+										img(src="assets/images/catalog-info6.jpg", alt="")
+									.main-catalog-info-items-item__title Masterhost,
+									.main-catalog-info-items-item__text от 130 руб.
+							a.main-catalog-info__link(href="#")
+								| 49 хостингов с конструктором тарифа
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
 								</svg>
-						button.main-filter-bot__btn.btn-background(type="submit") Показать 814 предложений
-		
-		section.main-catalog.margin-block
-			.mycontainer
+				
 				.main-catalog-content-wrap
 					.main-catalog-content
-
+					
 						.main-catalog-content-item-wrap.best-choice
 							.main-catalog-content-item-title
 								.main-catalog-content-item-title__num 1
@@ -453,3 +431,17 @@ block content
 							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
 							</svg>
+
+		section.main-seo.margin-block
+			.mycontainer
+				h2.main-seo__title Немного о хостингах для Битрикс
+				.main-seo-cols
+					.main-seo-cols__text 
+						p Это уже вариант посложнее — его используют, если у вас много сайтов, их посещает много людей, и на виртуальном хостинге сайты уже тормозят. Тогда лучше брать виртуальный сервер — это автономная часть реального сервера на SSD-дисках, использующая часть его ресурса. У Бегета она работает через виртуализацию KVM. VPS Beget, конечно, дороже виртуального хостинга, но и вариантов для использования у него больше.
+						p Самые мощные варианты для запуска собственных проектов. Цены хостинга Beget за мощности серверов соответствующие — 9800₽ за «слабую» сборку, и 48000₽ за «мощную».
+						p Это уже вариант посложнее — его используют, если у вас много сайтов, их посещает много людей, и на виртуальном хостинге сайты уже тормозят. Тогда лучше брать виртуальный сервер — это автономная часть реального сервера на SSD-дисках, использующая часть его ресурса. У Бегета она работает через виртуализацию KVM. VPS Beget, конечно, дороже виртуального хостинга, но и вариантов для использования у него больше.
+					.main-seo-cols__text 
+						p Вам выделят немного места на одном из имеющихся серверов. Виртуальный хостинг рассчитан на минимальную мощность — такое нужно маленьким блогам и сайтам. Впрочем, эта услуга подойдёт, если у вас много небольших сайтов — на тарифе City вы сможете содержать 75 сайтов, а при тарифе Mega ограничения по количеству снимаются: вас ограничивает только память в 50ГБ на SSD.
+						p Это уже вариант посложнее — его используют, если у вас много сайтов, их посещает много людей, и на виртуальном хостинге сайты уже тормозят. Тогда лучше брать виртуальный сервер — это автономная часть реального сервера на SSD-дисках, использующая часть его ресурса. У Бегета она работает через виртуализацию KVM. VPS Beget, конечно, дороже виртуального хостинга, но и вариантов для использования у него больше.
+					
+

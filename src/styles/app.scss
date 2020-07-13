@@ -1,6 +1,11 @@
 @import 'common/normalize';
 @import 'common/adaptive';
 
+::selection {
+	background-color: rgba(3, 97, 220, 0.99);
+	color: #fff;
+}
+
 body{
 	--text-color: #023352;
 	--sub-text-color: #606060;
@@ -63,4 +68,6 @@ body{
 @import 'common/footer';
 @import 'pages/index';
 @import 'pages/main';
+@import 'pages/cms';
+@import 'pages/hosting-page';
 

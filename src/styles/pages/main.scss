@@ -1,11 +1,33 @@
 .main{
-	&__title{
+	&-top{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		margin-top: 40px;
 		margin-bottom: 77px;
-		font-weight: 500;
-		font-size: 64px;
-		line-height: 72px;
-		color: #000000;
+		&__title{
+			font-weight: 500;
+			font-size: 64px;
+			line-height: 72px;
+			color: #000000;
+			&::selection {
+				background-color: rgba(255, 224, 87, 0.99);
+				color: var(--sub-color);
+			}	
+			span{
+				background: #FFE057;
+				padding: 0 8px;
+				color: var(--text-color);
+				&::selection {
+					background-color: rgba(255, 224, 87, 0.99);
+					color: var(--sub-color);
+				}			
+			}
+		}
+		&-info{
+			font-size: 12px;
+			color: var(--sub-color)
+		}
 	}
 	&-banner{
 		padding: 70px 0;
@@ -19,9 +41,17 @@
 				font-size: 64px;
 				line-height: 72px;
 				margin-bottom: 40px;
+				&::selection {
+					background-color: rgba(255, 224, 87, 0.99);
+					color: var(--sub-color);
+				}	
 				span{
 					background: #FFE057;
 					padding: 0 8px;
+					&::selection {
+						background-color: rgba(255, 224, 87, 0.99);
+						color: var(--sub-color);
+					}	
 				}
 			}
 			&__text{
@@ -36,6 +66,10 @@
 		}
 	}
 	&-filter{
+		margin-bottom: 80px;
+		&.margin-block{
+			margin-bottom: 160px;
+		}
 		.mycontainer{
 			position: relative;
 			> img{
@@ -159,7 +193,6 @@
 		}
 	}
 	&-catalog{
-		margin-top: 80px;
 		&.main-offers{
 			background: var(--sub-color);
 			padding: 80px 0;
@@ -170,6 +203,12 @@
 			}
 			.main-catalog-content-item-title__name{
 				color: #F5F6F7;
+			}
+			.main-catalog-content-item__link{
+				color: #F5F6F7;
+			}
+			.main-catalog-content-item__link svg path{
+				fill: #F5F6F7;
 			}
 		}
 		&-top{
@@ -204,7 +243,7 @@
 		&-content{
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 20px;
+			grid-gap: 80px 20px;
 			&-item{
 				padding: 0 24px;
 				background: #FFFFFF;
@@ -212,6 +251,18 @@
 				border-radius: 15px;
 				display: flex;
 				flex-direction: column;
+				position: relative;
+				&-wrap.best-choice{
+					.main-catalog-content-item:before{
+						content: '';
+						width: 81px;
+						height: 81px;
+						background: url('../images/best-choice.svg') center/contain no-repeat;
+						position: absolute;
+						right: -16px;
+						top: -24px;
+					}
+				}
 				&-row{
 					display: flex;
 					justify-content: space-between;
@@ -222,7 +273,8 @@
 					&:last-child{
 						margin-top: auto;
 					}
-					&.tabs{
+					&.tabs,
+					&.tariffs{
 						display: block;
 					}
 				}
@@ -231,7 +283,7 @@
 					flex-direction: column;
 					&:nth-child(2){
 						flex: 1;
-						padding: 0 24px;
+						padding-left: 64px;
 						flex-direction: row;
 					}
 					&-col{
@@ -240,7 +292,7 @@
 						flex-direction: column;
 						align-items: flex-start;
 						&:last-child{
-							.main-offers-content-item__info{
+							.main-catalog-content-item__info{
 								color: var(--sub-color)
 							}
 						}
@@ -249,7 +301,7 @@
 				&-title{
 					display: flex;
 					align-items: center;
-					margin-bottom: 32px;
+					margin-bottom: 8px;
 					&__num{
 						width: 105px;
 						height: 46px;
@@ -312,8 +364,8 @@
 				}
 				&__link{
 					font-weight: bold;
-					text-align: right;
-					color: var(--sub-color);
+					margin-bottom: 24px;
+					padding-left: 120px;
 					svg{
 						margin-left: 8px;
 					}
@@ -338,13 +390,10 @@
 					}
 				}
 				&-tab{
-					display: none;
+					display: flex;
 					margin-top: 16px;
-					&.active{
-						display: flex;
-					}
 					&-col{
-						margin-right: 56px;
+						margin-right: 64px;
 						&__title{
 							color: var(--sub-color);
 						}
@@ -352,6 +401,39 @@
 							font-size: 12px;
 							line-height: 16px;
 							margin-top: 8px;
+						}
+					}
+				}
+				&-tariff{
+					display: flex;
+					&.header-row{
+						font-weight: bold;
+						color: #000000;
+					}
+					&+&{
+						margin-top: 12px;
+					}
+					&-col{
+						flex: 1;
+						font-size: 12px;
+						line-height: 16px;
+						display: flex;
+						align-items: flex-start;
+						&:first-child{
+							font-weight: bold;
+						}
+						&:last-child{
+							justify-content: flex-end;
+						}
+						img{
+							margin-right: 14px;
+							&:last-child{
+								margin-right: 0;
+							}
+						}
+						span{
+							margin-left: 6px;
+							color: #00CC88;
 						}
 					}
 				}
@@ -581,7 +663,7 @@
 					&-title{
 						display: flex;
 						align-items: center;
-						margin-bottom: 46px;
+						margin-bottom: 40px;
 						&__num{
 							width: 34px;
 							height: 34px;
@@ -602,16 +684,13 @@
 					}
 					&-answers{
 						padding-left: 72px;
-						margin-bottom: 40px;
+						margin-bottom: 32px;
 						label{
 							display: flex;
 							align-items: center;
 							cursor: pointer;
 							font-size: 18px;
-							margin-bottom: 16px;
-							&:last-child{
-								margin-bottom: 0;
-							}
+							padding: 8px 0;
 							input{
 								display: none;
 								&:checked + span{

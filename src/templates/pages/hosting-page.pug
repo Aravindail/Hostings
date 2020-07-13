@@ -1,0 +1,581 @@
+extends ../template
+
+block variables
+	- var title = 'Страница хостинга'
+
+block content
+	.main
+		.mycontainer
+			.main-top
+				h1.main-top__title Обзор хостинга <span>Beget</span>
+				.main-top-info
+					<p><a href="mailto:sales1@bluehost.com"><b>sales1@bluehost.com</b></a></p>
+					<p><a href="tel:+1 801-765-9400">+1 801-765-9400</a></p>
+					<p>United States, Timpanogos Parkway, Orem, UT</p>
+
+		section.main-catalog.margin-block.wide-catalog
+			.mycontainer
+				
+				.main-catalog-info
+					.main-catalog-info-content
+						.main-catalog-info-wrap
+							.main-catalog-info__title Технологии, которые поддерживаются хостингом
+							.main-catalog-info__text — Memcached поможет вам закэшировать код, написанный на PHP.</br>— Tarantool — NoSQL СУБД поможет полноценно управлять данными.</br>— Sphinx даст полнотекстовый поиск по сайтам при помощи системы.</br>— Redis поможет хранить кэш данных в оперативной памяти.</br>— Поддерживаются протоколы SSH, FTP и HTTP2.</br>— Доступны языки Perl, Python и Java.</br>— Node.js, vBulletin, MongoDB, Litespeed, Laravel, Yii 2
+							
+						.main-catalog-info-wrap
+							.main-catalog-info__title CMS
+							.main-catalog-info__text WordPress, Joomla, Drupal, Cs-Cart, ABO.CMS, 1C-Bitrix, OpenCart, PrestaShop, NetCat, MODx, phpBB, Magento, DLE, UMI.CMS, Typo3, Contao, Сoncrete5, Serendipity, Moguta CMS, Amiro.CMS, Shop Script, HostCMS, IPB, 5CMS, Simpla
+							
+				
+				.main-catalog-content-wrap
+					.main-catalog-content
+					
+						.main-catalog-content-item-wrap.best-choice
+							.main-catalog-content-item-title
+								.main-catalog-content-item-title__num 1
+								.main-catalog-content-item-title__name Beget
+							a.main-catalog-content-item__link(href="#")
+								| beget.ru
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+								</svg>
+							.main-catalog-content-item
+								.main-catalog-content-item-row
+									.main-catalog-content-item-col
+										.main-catalog-content-item__logo
+											img(src="assets/images/hosting-logo.png", alt="")
+										.main-catalog-content-item__rate
+											<span>5.0</span>/5.0
+										a.main-catalog-content-item__reviews.btn-background(href="#") По 109 отзывам
+									.main-catalog-content-item-col
+										.main-catalog-content-item-col-col
+											.main-catalog-content-item__cashback
+												img(src="assets/images/price-circle.svg", alt="")
+												span От 190 руб.
+											.main-catalog-content-item__info Тестовый период
+											.main-catalog-content-item__info Страна:
+											.main-catalog-content-item__info На рынке с:
+											.main-catalog-content-item__info Техподдержка:
+										.main-catalog-content-item-col-col
+											.main-catalog-content-item__cashback
+												img(src="assets/images/cashback-circle.svg", alt="")
+												span Кэшбек 5%
+											.main-catalog-content-item__info 30 дней
+											.main-catalog-content-item__info Россия
+											.main-catalog-content-item__info 2007 года
+											.main-catalog-content-item__info Круглосуточная
+									.main-catalog-content-item-col
+										
+								.main-catalog-content-item-row.tabs
+									.main-catalog-content-item-navigation
+										a.main-catalog-content-item-navigation__link.active(href="#") Хостинги
+										a.main-catalog-content-item-navigation__link(href="#") VPS/VDS
+										a.main-catalog-content-item-navigation__link(href="#") Выделенный сервер
+										a.main-catalog-content-item-navigation__link(href="#") Домены
+									.main-catalog-content-item-tab
+										.main-catalog-content-item-tab-col
+											.main-catalog-content-item-tab-col__title Панель упр.
+											.main-catalog-content-item-tab-col__item Собственная
+											.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col__item ISP Manager
+										.main-catalog-content-item-tab-col
+											.main-catalog-content-item-tab-col__title Администр.
+											.main-catalog-content-item-tab-col__item Отсутствует
+											.main-catalog-content-item-tab-col__item ISP Manager
+										.main-catalog-content-item-tab-col
+											.main-catalog-content-item-tab-col__title Беспл. бэкап
+											.main-catalog-content-item-tab-col__item Есть
+											.main-catalog-content-item-tab-col__item ISP Manager
+										.main-catalog-content-item-tab-col
+											.main-catalog-content-item-tab-col__title Беспл. SSL
+											.main-catalog-content-item-tab-col__item Нет
+											.main-catalog-content-item-tab-col__item ISP Manager
+								.main-catalog-content-item-row.tariffs
+									.main-catalog-content-item-tariff.header-row
+										.main-catalog-content-item-tariff-col Тариф
+										.main-catalog-content-item-tariff-col Процессор
+										.main-catalog-content-item-tariff-col Ядра
+										.main-catalog-content-item-tariff-col ОП
+										.main-catalog-content-item-tariff-col SSD
+										.main-catalog-content-item-tariff-col ОС
+										.main-catalog-content-item-tariff-col Цена/мес.
+									.main-catalog-content-item-tariff
+										.main-catalog-content-item-tariff-col RD-30223
+										.main-catalog-content-item-tariff-col Xeon E5506
+										.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+										.main-catalog-content-item-tariff-col 12 Гб
+										.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+										.main-catalog-content-item-tariff-col 
+											img(src="assets/images/OS1.png", alt="")
+											img(src="assets/images/OS2.png", alt="")
+											img(src="assets/images/OS3.png", alt="")
+										.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+									.main-catalog-content-item-tariff
+										.main-catalog-content-item-tariff-col RD-30223
+										.main-catalog-content-item-tariff-col Xeon E5506
+										.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+										.main-catalog-content-item-tariff-col 12 Гб
+										.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+										.main-catalog-content-item-tariff-col 
+											img(src="assets/images/OS1.png", alt="")
+											img(src="assets/images/OS2.png", alt="")
+											img(src="assets/images/OS3.png", alt="")
+										.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+									.main-catalog-content-item-tariff
+										.main-catalog-content-item-tariff-col RD-30223
+										.main-catalog-content-item-tariff-col Xeon E5506
+										.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+										.main-catalog-content-item-tariff-col 12 Гб
+										.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+										.main-catalog-content-item-tariff-col 
+											img(src="assets/images/OS1.png", alt="")
+											img(src="assets/images/OS2.png", alt="")
+											img(src="assets/images/OS3.png", alt="")
+										.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+								.main-catalog-content-item-row 
+									a.main-catalog-content-item__next.btn-background(href="#") 
+										| Все тарифы
+										<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.97631 12.2692 0.659728 12.2692 0.464466 12.4645C0.269203 12.6597 0.269203 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 -2.18557e-08L3.5 16L4.5 16L4.5 2.18557e-08L3.5 -2.18557e-08Z" fill="white"/>
+										</svg>
+									a.main-catalog-content-item__fav.btn-background(href="#")
+										<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 21V8.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10.5 21V1" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M3 21V13.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+						
+		section.main-seo.margin-block
+			.mycontainer
+				h2.main-seo__title Услуги хостинга
+				.main-seo-cols
+					.main-seo-cols__text 
+						.main-seo-cols__text-title Виртуальный хостинг
+						p Вам выделят немного места на одном из имеющихся серверов. Виртуальный хостинг рассчитан на минимальную мощность — такое нужно маленьким блогам и сайтам. Впрочем, эта услуга подойдёт, если у вас много небольших сайтов — на тарифе City вы сможете содержать 75 сайтов, а при тарифе Mega ограничения по количеству снимаются: вас ограничивает только память в 50ГБ на SSD.
+						.main-seo-cols__text-title VPS — аренда виртуальных серверов
+						p Это уже вариант посложнее — его используют, если у вас много сайтов, их посещает много людей, и на виртуальном хостинге сайты уже тормозят. Тогда лучше брать виртуальный сервер — это автономная часть реального сервера на SSD-дисках, использующая часть его ресурса. У Бегета она работает через виртуализацию KVM. VPS Beget, конечно, дороже виртуального хостинга, но и вариантов для использования у него больше.
+						.main-seo-cols__text-title Выделенные сервера
+						p Самые мощные варианты для запуска собственных проектов. Цены хостинга Beget за мощности серверов соответствующие — 9800₽ за «слабую» сборку, и 48000₽ за «мощную».
+					.main-seo-cols__text 
+						img(src="assets/images/hosting-page.png", alt="")
+					
+		section.main-articles.margin-block
+			.mycontainer
+				.main-articles-top
+					h2.main-articles-top__title Акции
+				.main-articles-items
+					a.main-articles-items-item(href="#")
+						.main-articles-items-item__img
+							img(src="assets/images/article1.jpg", alt="") 
+						.main-articles-items-item__text Бесплатный SSL-сертификат
+						.main-articles-items-item__btn 
+							| Читать полностью
+							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+							</svg>
+					a.main-articles-items-item(href="#")
+						.main-articles-items-item__img
+							img(src="assets/images/article2.jpg", alt="") 
+						.main-articles-items-item__text Домен в подарок
+						.main-articles-items-item__btn 
+							| Читать полностью
+							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+							</svg>
+					a.main-articles-items-item(href="#")
+						.main-articles-items-item__img
+							img(src="assets/images/article3.jpg", alt="") 
+						.main-articles-items-item__text Годовой тестовый период 
+						.main-articles-items-item__btn 
+							| Читать полностью
+							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+							</svg>
+					
+		section.main-comments.margin-block
+			.mycontainer
+				.main-comments-info
+					h2.main-comments-info__title Отзывы
+					.main-comments-info__text Чтобы вы могли детальнее подойти к вопросу выбора хостинга для своего сайта, мы публикуем отзывы других пользователей. Также вы можете оставить свой отзыв, и мы его тоже опубликуем.
+					a.main-comments-info__btn.btn-border(href="#") Оставить отзыв
+				.main-comments-slider.swiper-container
+					.main-comments-slider-wrap.swiper-wrapper
+						.main-comments-slider-item.swiper-slide
+							.main-comments-slider-item__date 11.03.19
+							.main-comments-slider-item-title
+								.main-comments-slider-item-title__name Falcon
+								.main-comments-slider-item-title__rate 4.8
+							.main-comments-slider-item__text Пользуюсь с 2014 года тарифом Noble, установка любых cms в один клик вместе с созданием БД, SSD сервера.За 5 лет не было вообще никаких проблем, у меня размещенно 10 сайтов, даже подвисаний не было, тех поддержка отличная. </br>Пользуюсь с 2014 года тарифом Noble, установка любых cms в один клик вместе с созданием БД, SSD сервера.За 5 лет не было вообще никаких проблем, у меня размещенно 10 сайтов, даже подвисаний не было, тех поддержка отличная.
+							.main-comments-slider-item-bot
+								.main-comments-slider-item-bot-col
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__plus +
+										.main-comments-slider-item-bot__text Цена, панель управления, скорость
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__minus -
+										.main-comments-slider-item-bot__text Не нашёл
+								.main-comments-slider-item-bot-col
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__title Цена
+										.main-comments-slider-item-bot__stars(data-rate="0")
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__title Скорость
+										.main-comments-slider-item-bot__stars(data-rate="1")
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__title Надёжность
+										.main-comments-slider-item-bot__stars(data-rate="2")
+									.main-comments-slider-item-bot-row
+										.main-comments-slider-item-bot__title Поддержка
+										.main-comments-slider-item-bot__stars(data-rate="3")
+
+		section.main-recommend.margin-block
+			.mycontainer
+				h2.main-recommend__title Наши рекомендации похожих хостеров
+				.main-recommend-slider.swiper-container
+					.main-recommend-slider-wrap.swiper-wrapper
+						.main-catalog-content-item-wrap.swiper-slide
+								.main-catalog-content-item-title
+									.main-catalog-content-item-title__num 1
+									.main-catalog-content-item-title__name Beget
+								a.main-catalog-content-item__link(href="#")
+									| beget.ru
+									<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+									</svg>
+								.main-catalog-content-item
+									.main-catalog-content-item-row
+										.main-catalog-content-item-col
+											.main-catalog-content-item__logo
+												img(src="assets/images/hosting-logo.png", alt="")
+											.main-catalog-content-item__rate
+												<span>5.0</span>/5.0
+											a.main-catalog-content-item__reviews.btn-background(href="#") По 109 отзывам
+										.main-catalog-content-item-col
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/price-circle.svg", alt="")
+													span От 190 руб.
+												.main-catalog-content-item__info Тестовый период
+												.main-catalog-content-item__info Страна:
+												.main-catalog-content-item__info На рынке с:
+												.main-catalog-content-item__info Техподдержка:
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/cashback-circle.svg", alt="")
+													span Кэшбек 5%
+												.main-catalog-content-item__info 30 дней
+												.main-catalog-content-item__info Россия
+												.main-catalog-content-item__info 2007 года
+												.main-catalog-content-item__info Круглосуточная
+										.main-catalog-content-item-col
+											
+									.main-catalog-content-item-row.tabs
+										.main-catalog-content-item-navigation
+											a.main-catalog-content-item-navigation__link.active(href="#") Хостинги
+											a.main-catalog-content-item-navigation__link(href="#") VPS/VDS
+											a.main-catalog-content-item-navigation__link(href="#") Выделенный сервер
+											a.main-catalog-content-item-navigation__link(href="#") Домены
+										.main-catalog-content-item-tab
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Панель упр.
+												.main-catalog-content-item-tab-col__item Собственная
+												.main-catalog-content-item-tab-col__item ISP Manager
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Администр.
+												.main-catalog-content-item-tab-col__item Отсутствует
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. бэкап
+												.main-catalog-content-item-tab-col__item Есть
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. SSL
+												.main-catalog-content-item-tab-col__item Нет
+												.main-catalog-content-item-tab-col__item ISP Manager
+									.main-catalog-content-item-row.tariffs
+										.main-catalog-content-item-tariff.header-row
+											.main-catalog-content-item-tariff-col Тариф
+											.main-catalog-content-item-tariff-col Процессор
+											.main-catalog-content-item-tariff-col Ядра
+											.main-catalog-content-item-tariff-col ОП
+											.main-catalog-content-item-tariff-col SSD
+											.main-catalog-content-item-tariff-col ОС
+											.main-catalog-content-item-tariff-col Цена/мес.
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+									.main-catalog-content-item-row 
+										a.main-catalog-content-item__next.btn-background(href="#") 
+											| Посмотреть все тарифы
+											<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#F5F6F7"></path>
+											</svg>
+										a.main-catalog-content-item__fav.btn-background(href="#")
+											<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 21V8.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M10.5 21V1" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M3 21V13.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							
+						.main-catalog-content-item-wrap.swiper-slide
+								.main-catalog-content-item-title
+									.main-catalog-content-item-title__num 1
+									.main-catalog-content-item-title__name Beget
+								a.main-catalog-content-item__link(href="#")
+									| beget.ru
+									<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+									</svg>
+								.main-catalog-content-item
+									.main-catalog-content-item-row
+										.main-catalog-content-item-col
+											.main-catalog-content-item__logo
+												img(src="assets/images/hosting-logo.png", alt="")
+											.main-catalog-content-item__rate
+												<span>5.0</span>/5.0
+											a.main-catalog-content-item__reviews.btn-background(href="#") По 109 отзывам
+										.main-catalog-content-item-col
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/price-circle.svg", alt="")
+													span От 190 руб.
+												.main-catalog-content-item__info Тестовый период
+												.main-catalog-content-item__info Страна:
+												.main-catalog-content-item__info На рынке с:
+												.main-catalog-content-item__info Техподдержка:
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/cashback-circle.svg", alt="")
+													span Кэшбек 5%
+												.main-catalog-content-item__info 30 дней
+												.main-catalog-content-item__info Россия
+												.main-catalog-content-item__info 2007 года
+												.main-catalog-content-item__info Круглосуточная
+										.main-catalog-content-item-col
+											
+									.main-catalog-content-item-row.tabs
+										.main-catalog-content-item-navigation
+											a.main-catalog-content-item-navigation__link.active(href="#") Хостинги
+											a.main-catalog-content-item-navigation__link(href="#") VPS/VDS
+											a.main-catalog-content-item-navigation__link(href="#") Выделенный сервер
+											a.main-catalog-content-item-navigation__link(href="#") Домены
+										.main-catalog-content-item-tab
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Панель упр.
+												.main-catalog-content-item-tab-col__item Собственная
+												.main-catalog-content-item-tab-col__item ISP Manager
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Администр.
+												.main-catalog-content-item-tab-col__item Отсутствует
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. бэкап
+												.main-catalog-content-item-tab-col__item Есть
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. SSL
+												.main-catalog-content-item-tab-col__item Нет
+												.main-catalog-content-item-tab-col__item ISP Manager
+									.main-catalog-content-item-row.tariffs
+										.main-catalog-content-item-tariff.header-row
+											.main-catalog-content-item-tariff-col Тариф
+											.main-catalog-content-item-tariff-col Процессор
+											.main-catalog-content-item-tariff-col Ядра
+											.main-catalog-content-item-tariff-col ОП
+											.main-catalog-content-item-tariff-col SSD
+											.main-catalog-content-item-tariff-col ОС
+											.main-catalog-content-item-tariff-col Цена/мес.
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+									.main-catalog-content-item-row 
+										a.main-catalog-content-item__next.btn-background(href="#") 
+											| Посмотреть все тарифы
+											<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#F5F6F7"></path>
+											</svg>
+										a.main-catalog-content-item__fav.btn-background(href="#")
+											<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 21V8.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M10.5 21V1" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M3 21V13.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							
+						.main-catalog-content-item-wrap.swiper-slide
+								.main-catalog-content-item-title
+									.main-catalog-content-item-title__num 1
+									.main-catalog-content-item-title__name Beget
+								a.main-catalog-content-item__link(href="#")
+									| beget.ru
+									<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#0361DC"/>
+									</svg>
+								.main-catalog-content-item
+									.main-catalog-content-item-row
+										.main-catalog-content-item-col
+											.main-catalog-content-item__logo
+												img(src="assets/images/hosting-logo.png", alt="")
+											.main-catalog-content-item__rate
+												<span>5.0</span>/5.0
+											a.main-catalog-content-item__reviews.btn-background(href="#") По 109 отзывам
+										.main-catalog-content-item-col
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/price-circle.svg", alt="")
+													span От 190 руб.
+												.main-catalog-content-item__info Тестовый период
+												.main-catalog-content-item__info Страна:
+												.main-catalog-content-item__info На рынке с:
+												.main-catalog-content-item__info Техподдержка:
+											.main-catalog-content-item-col-col
+												.main-catalog-content-item__cashback
+													img(src="assets/images/cashback-circle.svg", alt="")
+													span Кэшбек 5%
+												.main-catalog-content-item__info 30 дней
+												.main-catalog-content-item__info Россия
+												.main-catalog-content-item__info 2007 года
+												.main-catalog-content-item__info Круглосуточная
+										.main-catalog-content-item-col
+											
+									.main-catalog-content-item-row.tabs
+										.main-catalog-content-item-navigation
+											a.main-catalog-content-item-navigation__link.active(href="#") Хостинги
+											a.main-catalog-content-item-navigation__link(href="#") VPS/VDS
+											a.main-catalog-content-item-navigation__link(href="#") Выделенный сервер
+											a.main-catalog-content-item-navigation__link(href="#") Домены
+										.main-catalog-content-item-tab
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Панель упр.
+												.main-catalog-content-item-tab-col__item Собственная
+												.main-catalog-content-item-tab-col__item ISP Manager
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Администр.
+												.main-catalog-content-item-tab-col__item Отсутствует
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. бэкап
+												.main-catalog-content-item-tab-col__item Есть
+												.main-catalog-content-item-tab-col__item ISP Manager
+											.main-catalog-content-item-tab-col
+												.main-catalog-content-item-tab-col__title Беспл. SSL
+												.main-catalog-content-item-tab-col__item Нет
+												.main-catalog-content-item-tab-col__item ISP Manager
+									.main-catalog-content-item-row.tariffs
+										.main-catalog-content-item-tariff.header-row
+											.main-catalog-content-item-tariff-col Тариф
+											.main-catalog-content-item-tariff-col Процессор
+											.main-catalog-content-item-tariff-col Ядра
+											.main-catalog-content-item-tariff-col ОП
+											.main-catalog-content-item-tariff-col SSD
+											.main-catalog-content-item-tariff-col ОС
+											.main-catalog-content-item-tariff-col Цена/мес.
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+										.main-catalog-content-item-tariff
+											.main-catalog-content-item-tariff-col RD-30223
+											.main-catalog-content-item-tariff-col Xeon E5506
+											.main-catalog-content-item-tariff-col 4 × 2.13 ГГц
+											.main-catalog-content-item-tariff-col 12 Гб
+											.main-catalog-content-item-tariff-col 2 × 1 000 Гб
+											.main-catalog-content-item-tariff-col 
+												img(src="assets/images/OS1.png", alt="")
+												img(src="assets/images/OS2.png", alt="")
+												img(src="assets/images/OS3.png", alt="")
+											.main-catalog-content-item-tariff-col 4 013 RUB <span>%</span>
+									.main-catalog-content-item-row 
+										a.main-catalog-content-item__next.btn-background(href="#") 
+											| Посмотреть все тарифы
+											<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M16.5657 6.56569C16.8781 6.25327 16.8781 5.74673 16.5657 5.43431L11.4745 0.343146C11.1621 0.0307264 10.6556 0.0307264 10.3431 0.343146C10.0307 0.655565 10.0307 1.1621 10.3431 1.47452L14.8686 6L10.3431 10.5255C10.0307 10.8379 10.0307 11.3444 10.3431 11.6569C10.6556 11.9693 11.1621 11.9693 11.4745 11.6569L16.5657 6.56569ZM0 6.8H16V5.2H0V6.8Z" fill="#F5F6F7"></path>
+											</svg>
+										a.main-catalog-content-item__fav.btn-background(href="#")
+											<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 21V8.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M10.5 21V1" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M3 21V13.5" stroke="#F5F6F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+							
+
