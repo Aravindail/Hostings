@@ -1,5 +1,7 @@
 .main{
 	&-comments{
+		overflow: hidden;
+		padding-bottom: 15px;
 		.mycontainer{
 			display: flex;
 			align-items: center;
@@ -7,6 +9,8 @@
 		&-info{
 			flex: 0 0 460px;
 			padding-right: 8%;
+			position: relative;
+			z-index: 2;
 			&__title{
 				font-weight: bold;
 				font-size: 48px;
@@ -26,11 +30,23 @@
 			}
 		}
 		&-slider{
+			max-width: calc(100% - 460px);
 			overflow: visible;
 			margin-left: 0;
+			position: relative;
 			cursor:  url('../images/cursor-drag.svg') 32 32, pointer!important;
 			*{
 				cursor:  url('../images/cursor-drag.svg') 32 32, pointer!important;
+			}
+			&:before{
+				content: '';
+				width: 100vw;
+				height: 104%;
+				position: absolute;
+				right: 102%;
+				top: 0;
+				background: var(--bg-color);
+				z-index: 2;
 			}
 			&-item{
 				background: #FFFFFF;

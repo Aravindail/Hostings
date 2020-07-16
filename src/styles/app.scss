@@ -1,7 +1,7 @@
 @import 'common/normalize';
 @import 'common/adaptive';
 
-::selection {
+::selection{
 	background-color: rgba(3, 97, 220, 0.99);
 	color: #fff;
 }
@@ -20,15 +20,15 @@ body{
 	color: var(--text-color);
 	background: var(--bg-color);
 }
-.wrapper {
+.wrapper{
   display: flex;
   min-height: 100vh;
 	flex-direction: column;
 }
-.content {
+.content{
 	flex: 1;
 }
-.mycontainer {
+.mycontainer{
 	width: 100%;
 	max-width: 1496px;
   padding: 0 24px;
@@ -42,6 +42,7 @@ body{
 	border-radius: 40px;
 	font-weight: bold;
 	color: var(--btn-text-color);
+	white-space: nowrap;
 	svg{
 		margin-left: 8px;
 	}
@@ -55,12 +56,26 @@ body{
 	font-weight: bold;
 	color: var(--sub-color);
 	border: 1.6px solid var(--sub-color);
+	white-space: nowrap;
 	svg{
 		margin-left: 8px;
 	}
 }
 .margin-block{
 	margin-bottom: 160px;
+}
+
+@include w480{
+	.mycontainer{
+		padding: 0 16px;
+	}
+	.btn-border,
+	.btn-background{
+		font-size: 12px;
+	}
+	.margin-block{
+		margin-bottom: 100px;
+	}
 }
 
 @import 'common/fonts';

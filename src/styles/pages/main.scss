@@ -88,8 +88,8 @@
 				content: '';
 				position: absolute;
 				top: -12px;
-				left: -25px ;
-				width: calc(100% + 50px);
+				left: -24px ;
+				width: calc(100% + 48px);
 				height: 23px;
 				background: url('../images/filter-img.svg') center/contain no-repeat;
 			}
@@ -124,7 +124,7 @@
 				border-radius: 5px;
 				display: flex;
 				padding: 7px 16px;
-				width: 330px;
+				width: calc(25% - 15px);
 				white-space: nowrap;
 				input{
 					border: none;
@@ -136,6 +136,44 @@
 				}
 				span{
 					color: #0D0D0D;
+				}
+				&.select-input{
+					position: relative;
+					cursor: pointer;
+					&:before{
+						content: '';
+						width: 8px;
+						height: 16px;
+						background: url('../images/select-arr.svg') center/contain no-repeat;
+						position: absolute;
+						right: 16px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					.select-input-items{
+						position: absolute;
+						background: #FFFFFF;
+						box-shadow: 0px 2px 7px rgba(3, 97, 220, 0.2);
+						border-radius: 4px;
+						padding: 14px 0;
+						top: calc(100% + 1px);
+						left: 0;
+						width: 100%;
+						display: none;
+						&.active{
+							display: block;
+						}
+						&-item{
+							cursor: pointer;
+							padding: 2px 16px;
+							transition: .1s;
+							@include hover{
+								&:hover{
+									color: var(--sub-color);
+								}
+							}
+						}
+					}
 				}
 			}
 			&-checkbox{
@@ -721,6 +759,484 @@
 						svg{
 							margin-left: 0;
 							margin-right: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w1024{
+	.main{
+		&-banner{
+			padding: 48px 0 64px;
+			&-info{
+				width: 672px;
+				&__text{
+					margin-bottom: 40px;
+				}
+			}
+			&-img{
+				width: calc(100% - 672px);
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+		&-filter{
+			&-top{
+				margin-bottom: 24px;
+			}
+			&-content{
+				&-row{
+					flex-wrap: wrap;
+					display: none;
+					&:first-child{
+						display: flex;
+					}
+				}
+				&-input{
+					width: calc(50% - 8px);
+					&:nth-child(1),
+					&:nth-child(2){
+						margin-bottom: 16px;
+					}
+				}
+			}
+			&-bot{
+				margin-top: 24px;
+			}
+		}
+		&-catalog{
+			&.main-offers{
+				padding: 40px 0;
+			}
+			&-top{
+				margin-bottom: 32px;
+				&__title{
+					font-size: 36px;
+					line-height: 48px;
+					span{
+						&:after{
+							left: -10px;
+    					top: -25px;
+						}
+					}
+				}
+			}
+			&-content{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 40px;
+			}
+		}
+		&-reviews{
+			padding: 64px 0;
+			margin-bottom: 80px;
+			&-info{
+				&__title{
+					font-size: 36px;
+					line-height: 48px;
+				}
+			}
+		}
+		&-adv{
+			&__title{
+				font-size: 24px;
+				line-height: 32px;
+				margin-bottom: 64px;
+			}
+		}
+		&-articles{
+			&-top{
+				&__title{
+					font-size: 36px;
+					line-height: 48px;
+				}
+			}
+			&-items{
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		&-quiz{
+			&-top{
+				&__title{
+					font-size: 36px;
+					line-height: 48px;
+				}
+			}
+			&-content{
+				padding: 40px 24px;
+				&-col{
+					&-step{
+						&-answers{
+							padding-left: 0;
+						}
+					}
+					&-btns{
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w768{
+	.main{
+		&-banner{
+			padding-bottom: 52px;
+			.mycontainer{
+				display: block;
+			}
+			&-info{
+				margin-bottom: 16px;
+				width: 100%;
+			}
+			&-img{
+				width: auto;
+				height: 340px;
+				padding-right: 40px;
+				img{
+					margin-left: auto;
+					height: 100%;
+				}
+			}
+		}
+		&-filter{
+			&-wrap{
+				padding: 24px 16px;
+			}
+			&-top{
+				&__title{
+					font-size: 18px;
+					line-height: 24px;
+					max-width: 250px;
+				}
+			}
+			&-content{
+				&-input{
+					width: 100%;
+					margin-bottom: 16px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		&-catalog{
+			&-top{
+				display: block;
+				&__title{
+					margin-bottom: 8px;
+				}
+			}
+		}
+		&-reviews{
+			&-content{
+				&__quote{
+					font-size: 16px;
+				}
+			}
+		}
+		&-adv{
+			&-items{
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 42px;
+				&-item{
+					svg{
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+		&-articles{
+			&-top{
+				flex-direction: column;
+				align-items: flex-start;
+				&__title{
+					margin-bottom: 24px;
+				}
+			}
+		}
+		&-quiz{
+			&-top{
+				flex-direction: column;
+				align-items: flex-start;
+				&-col{
+					margin-bottom: 24px;
+				}
+			}
+			&-content{
+				&-col{
+					&-btns{
+						&__prev{
+							margin-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w480{
+	.main{
+		&-banner{
+			padding-top: 40px;
+			padding-bottom: 142px;
+			position: relative;
+			&-info{
+				margin-bottom: 58px;
+				&__title{
+					font-size: 32px;
+					line-height: 40px;
+					margin-bottom: 24px;
+				}
+				&__text{
+					font-size: 16px;
+					line-height: 24px;
+					margin-bottom: 0;
+				}
+				&__btn{
+					position: absolute;
+					left: 50%;
+					bottom: 48px;
+					transform: translateX(-50%);
+					height: 36px;
+					width: auto;
+					padding: 0 24px;
+				}
+			}
+			&-img{
+				height: auto;
+				padding-right: 0;
+				img{
+					height: auto;
+				}
+			}
+		}
+		&-filter{
+			&.margin-block{
+				margin-bottom: 100px;
+			}
+			.mycontainer{
+				> img{
+					bottom: -30px;
+					left: -10px;
+					width: 34px;
+				}
+			}
+			&-wrap{
+				&:before{
+					display: none;
+				}
+			}
+			&-top{
+				display: block;
+				&__title{
+					margin-bottom: 16px;
+				}
+				&__btn{
+					font-size: 13px;
+				}
+			}
+			&-bot{
+				flex-direction: column;
+				align-items: center;
+				&-btns{
+					font-size: 14px;
+					margin-bottom: 24px;
+					&__more{
+						margin-right: 10px;
+					}
+				}
+				&__btn{
+					height: 36px;
+				}
+			}
+		}
+		&-catalog{
+			&-content{
+				&-item{
+					padding: 0 16px;
+					&-row{
+						&:first-child{
+							display: block;
+						}
+						&.tariffs{
+							display: flex;
+						}
+					}
+					&-col{
+						&:first-child{
+							flex-direction: row;
+							flex-wrap: wrap;
+							align-items: center;
+						}
+						&:nth-child(2){
+							padding-left: 0;
+						}
+					}
+					&__logo{
+
+					}
+					&__rate{
+
+					}
+					&__reviews{
+
+					}
+					&-navigation{
+						width: calc(100vw - 64px);
+						overflow-x: scroll;
+						white-space: nowrap;
+					}
+					&-tab{
+						display: block;
+						&-col{
+							margin-right: 0;
+						}
+					}
+					&-tariff{
+						display: block;
+						&:nth-child(4){
+							display: none;
+						}
+						&+&{
+							margin-top: 0;
+						}
+						&-col{
+							&:last-child{
+								justify-content: flex-start;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-reviews{
+			padding: 40px 0 100px;
+			position: relative;
+			.mycontainer{
+				display: block;
+			}
+			&-info{
+				&__title{
+					font-size: 31px;
+					line-height: 40px;
+					margin-bottom: 24px;
+				}
+				&__btn{
+					position: absolute;
+					bottom: 40px;
+					left: 16px;
+					height: 36px;
+				}
+			}
+			&-content{
+				padding-left: 21px;
+				&__quote{
+					margin-bottom: 16px;
+					&:before{
+						font-size: 36px;
+						left: -20px;
+					}
+				}
+				&-author{
+					margin-left: -21px;
+					&__img{
+						width: 64px;
+    				height: 64px;
+					}
+				}
+			}
+		}
+		&-adv{
+			&__title{
+				font-size: 18px;
+				line-height: 24px;
+				font-weight: normal;
+			}
+			&-items{
+				grid-gap: 40px;
+				grid-template-columns: repeat(1, 1fr);
+				&-item{
+					svg{
+						width: 96px;
+						height: 96px;
+					}
+				}
+			}
+		}
+		&-articles{
+			&-top{
+				margin-bottom: 24px;
+				&__title{
+					font-size: 32px;
+					line-height: 40px;
+					margin-bottom: 16px;
+				}
+				&__btn{
+					height: 32px;
+				}
+			}
+			&-items{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 16px;
+				&-item{
+					&__img{
+						margin-bottom: 16px;
+					}
+					&__text{
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		&-quiz{
+			&-top{
+				margin-bottom: 24px;
+				&__title{
+					font-size: 32px;
+    			line-height: 40px;
+				}
+				&__text{
+					font-size: 16px;
+				}
+				&-col{
+					margin-bottom: 16px;
+				}
+				&__btn{
+					height: 32px;
+				}
+			}
+			&-content{
+				padding: 24px 16px;
+				flex-direction: column-reverse;
+				&-col{
+					> img{
+						max-height: 264px;
+						margin-bottom: 32px;
+					}
+					&-step{
+						&-title{
+							margin-bottom: 16px;
+							&__name{
+								font-size: 24px;
+							}
+						}
+						&-answers{
+							label{
+								font-size: 16px;
+							}
+						}
+					}
+					&-btns{
+						&__prev,
+						&__next{
+							width: 118px;
+							height: 36px;
 						}
 					}
 				}
